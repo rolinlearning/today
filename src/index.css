@@ -1,0 +1,33 @@
+:root {
+  /*  typografia*/
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /*  colores*/
+  color: rgba(255, 255, 255, 0.87);
+  /*  background-color: #03031f;*/
+  background: radial-gradient(
+    circle at top right,
+    /* Primer color en el 0% del degradado */ #e149c3 0%,
+    /* Segundo color en el 50% del degradado */ #353290 5%,
+    /* Tercer color en el 100% del degradado */ #03031f 50%
+  );
+  background-size: cover; /* Asegura que el fondo cubra toda el área */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+
+  /*typografia propiedades*/
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 100vh;
+  overflow: hidden;
+}
