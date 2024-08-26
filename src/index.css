@@ -30,4 +30,11 @@ body {
   border: none;
   height: 100vh;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    /* Ajusta el valor al breakpoint móvil que uses */
+    body {
+      overflow: hidden; /* Evitar scroll en dispositivos móviles */
+    }
+  }
 }

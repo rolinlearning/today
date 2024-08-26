@@ -144,9 +144,14 @@ export default function AddTask({ onAddTask }) {
 	};
 
 	const handleFocus = () => {
-		if (textareaRef.current) {
-			textareaRef.current.scrollIntoView({ behavior: 'smooth' });
-		}
+		setTimeout(() => {
+			if (textareaRef.current) {
+				textareaRef.current.scrollIntoView({
+					behavior: 'smooth',
+					block: 'center',
+				});
+			}
+		}, 300); // El retraso ayuda a asegurar que el teclado ya esté desplegado.
 	};
 	return (
 		<>
