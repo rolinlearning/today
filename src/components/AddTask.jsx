@@ -142,6 +142,12 @@ export default function AddTask({ onAddTask }) {
 			}
 		}
 	};
+
+	const handleFocus = () => {
+		if (textareaRef.current) {
+			textareaRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<>
 			<StyledPrincipalContainer>
@@ -156,6 +162,7 @@ export default function AddTask({ onAddTask }) {
 							hashText={inputValue !== ''}
 							// onKeyDown={(e) => e.key === 'Enter' && handleAddTask()}
 							rows={1} // Empieza con una sola línea visible
+							onFocus={handleFocus} // llama a la funcion que mejora el scroll
 						/>
 						<StyledSendIcon
 							style={{
